@@ -11,6 +11,7 @@
 <body>
 	<div class="student-input">
 	<input type='text' name='question' placeholder="Type your question here..." > <br />
+        $sql = "INSERT INTO `student`(`comments`) values(question);
 	<input type='button' name='submit' value="Do Not Understand" onclick="send-comment(question.value)">
 	</div>
 	
