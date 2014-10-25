@@ -10,10 +10,25 @@
 </head>
 <body>
 	<div class="student-input">
-	<input type='text' name='question' placeholder="Type your question here..."> <br />
-	<input type='button' name='submit' value="Do Not Understand" onclick="send()">
+	<input type='text' name='question' placeholder="Type your question here..." > <br />
+	<input type='button' name='submit' value="Do Not Understand" onclick="send-comment(question.value)">
 	</div>
-	<div class="class-status">
 	
-	</div>
+	<script>
+	function send-comment(text) {
+		if (window.XMLHttpRequest) {
+			xmlhttp = new XMLHttpRequest();
+		} else {
+			xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		xmlhttp.onstatechange=function() {
+			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+				document.getElementById("student-input").innerHTML=xmlhttp.responseText;
+			}
+		}
+		xmlhttp.open('GET',"script_name.php?response="+text,true);
+		xmlhttp.send();
+	}
+	</script>
+	
 </body>
