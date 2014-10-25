@@ -1,3 +1,7 @@
+<?php
+	// Need the database connection:
+	require ('mysqli_connect.php');
+?>
 <html>
 <head>
 	<title> Student IDK </title>

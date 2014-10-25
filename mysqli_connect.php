@@ -11,6 +11,9 @@ DEFINE ('DB_HOST', 'localhost');
 DEFINE ('DB_NAME', 'gonzodev_idk');
 
 // Make the connection:
-$dbc = mysqli_connect (DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) OR die ('Could not connect to MySQL: ' . mysqli_connect_error() );
-
-
+$dbc = mysqli_connect (DB_HOST, DB_USER, DB_PASSWORD, DB_NAME); // Check connection
+if ($dbc->connect_error) {
+    die("Connection failed: " . $dbc->connect_error);
+} 
+echo "Connected successfully";
+?>
