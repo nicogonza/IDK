@@ -1,6 +1,3 @@
-<?php
-
-?>
 <html>
 <head>
 	<title> IDK Signup </title>
@@ -17,8 +14,8 @@
 		<input type="password" placeholder="Choose a password"><br />
 		<!--	<input type="radio" name="type" value="teacher">Teacher<br />
 		<input type="radio" name="type" value="student">Student<br /> -->
-		<input type="button" value="Student Sign Up"><br /><br />
-		<input type="button" value="Teacher Sign Up">
+		<input type="submit" value="Student Sign Up"><br /><br />
+		<input type="submit" value="Teacher Sign Up">
 		</form>
 	</div>
 </body>
