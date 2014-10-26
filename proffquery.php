@@ -1,9 +1,9 @@
 <?php 
 // Need the database connection:
 	require ('mysqli_connect.php');
-		$sql = "SELECT * FROM student order by student_ID ASC";
+$sql = "SELECT * FROM student order by student_ID DESC";
 $r = @mysqli_query ($dbc, $sql);
-while($row = mysqli_fetch_array($r)){	
+$row = mysqli_fetch_array($r);
 	   $comments = $row['comments'];
-		}
+		echo $comments;
 ?>
