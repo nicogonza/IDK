@@ -7,7 +7,6 @@
 <body>
 <input type="submit" id="name-submit" onClick="update()">
 <div id="name-data"></div>
-<div class="row">
 <div class="col-lg-4">
   <div class="panel panel-green">
     <div class="panel-heading">
@@ -29,9 +28,9 @@
 <!-- Bootstrap Core JavaScript --> 
 <script src="bootstrap.min.js"></script> 
 <script src="jquery.flot.js"></script> 
-<script src="jquery.flottooltip.min.js"></script> 
+<script src="jquery.flot.tooltip.min.js"></script> 
 <script src="jquery.resize.js"></script> 
-<script src="flot/jquerypie.js"></script> 
+<script src="jquerypie.js"></script> 
 <script src="flot-data.js"></script>
 </body>
 </html>

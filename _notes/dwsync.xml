@@ -10,7 +10,7 @@
 <file name="slogin.php" server="ftp.gonzodev.com" local="130587712140799022" remote="130587720000000000" Dst="2" />
 <file name="check-slogin.php" server="ftp.gonzodev.com" local="130587712140799022" remote="130587720000000000" Dst="2" />
 <file name="global.js" server="ftp.gonzodev.com" local="130587807610000000" remote="130587836400000000" Dst="2" />
-<file name="proff_view.php" server="ftp.gonzodev.com" local="130587836638589047" remote="130587836400000000" Dst="2" />
+<file name="proff_view.php" server="ftp.gonzodev.com" local="130587839547130240" remote="130587839400000000" Dst="2" />
 <file name="slogin_functions.php" server="ftp.gonzodev.com" local="130587764348188287" remote="130587764400000000" Dst="2" />
 <file name="proffquery.php" server="ftp.gonzodev.com" local="130587783508433379" remote="130587799200000000" Dst="2" />
 <file name="index.html" server="ftp.gonzodev.com" local="130587827997246678" remote="130587828000000000" Dst="2" />
@@ -20,4 +20,7 @@
 <file name="bootstrap.min.js" server="ftp.gonzodev.com" local="130587836330788785" remote="130587836400000000" Dst="2" />
 <file name="jquery.flot.js" server="ftp.gonzodev.com" local="130587835578543002" remote="130587836400000000" Dst="2" />
 <file name="flot-data.js" server="ftp.gonzodev.com" local="130587834578729660" remote="130587836400000000" Dst="2" />
+<file name="jquery.flot.tooltip.min.js" server="ftp.gonzodev.com" local="130587835403262953" remote="130587836400000000" Dst="2" />
+<file name="jquerypie.js" server="ftp.gonzodev.com" local="130587833217173523" remote="130587836400000000" Dst="2" />
+<file name="jqueryresize.js" server="ftp.gonzodev.com" local="130587835056532697" remote="130587836400000000" Dst="2" />
 </dwsync>
