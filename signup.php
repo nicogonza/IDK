@@ -15,13 +15,14 @@ if (isset($_POST['signup'])) {
 		$errors[] = 'You forgot to enter your password.';
 	}
 	if (empty($errors)) { // If everything's OK.
-	echo "working";
 		$q = "SELECT * FROM professors group by id ASC";
 		$r = @mysqli_query ($dbc, $q); // Run the query.
 		if ($r) { // If it ran OK.
+			$row = mysqli_fetch_array($r);
 			$profid = $row['id'] + 1;
 		}
-		$q = "INSERT INTO professors(`id`,`password`,`username`) values ($profid, $pass, $username)";
+		$q = "INSERT INTO professors(`id`,`password`,`username`) values ($profid, \"$pass\", \"$username\")";
+		echo $q;
 		$r = @mysqli_query ($dbc, $q); // Run the query.
 		$q = "INSERT INTO class (`class_ID`,`class_Size`) values ($classid, $classsize)";  
 		$r = @mysqli_query ($dbc, $q); // Run the query.
