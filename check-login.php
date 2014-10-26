@@ -30,7 +30,7 @@ if (isset($_POST['login'])) {
 				}
 		
 		// Redirect:
-		redirect_user('login.php');
+		redirect_user('studentinput.php');
 			
 	} else { // Unsuccessful!
 
