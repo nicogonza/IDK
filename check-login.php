@@ -3,7 +3,7 @@
 // Upon successful login, the user is redirected.
 // Two included files are necessary.
 // Send NOTHING to the Web browser prior to the setcookie() lines!
-
+echo "working";
 // Check if the form has been submitted:
 if (isset($_POST['login'])) {
 
