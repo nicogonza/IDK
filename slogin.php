@@ -6,7 +6,7 @@
 	<h1 id="header"> Student Login</h1>
 
 	<form name="form1" method="post" action="check-slogin.php">
-	<input name="courseid" type="text" id="courseid" placeholder="Course ID">
+	<input name="classid" type="text" id="classid" placeholder="Class ID">
 	<input type="submit" name="login" value="Login">
 	</form>
 </div>
