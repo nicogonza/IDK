@@ -8,7 +8,7 @@ body {
 }
 
 /* login div */
-.login {
+.login, .student-input {
   background-color: #eee;
   width: 420px;
   height: 370px;

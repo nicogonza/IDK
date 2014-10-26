@@ -23,14 +23,15 @@
 		echo $sql;
 		$r = @mysqli_query ($dbc, $sql);
 		if ($r){
-			echo '<h1> Thank you for your question <h1>';
+			echo '<h1 id="header"> Thank you for your question <h1>';
 		}else {
-			echo '<h1>Error!</h1>';
+			echo '<h1 id="header">Error!</h1>';
 		}
 	} else {
 ?>
 <head>
 	<title> Student IDK </title>
+	<link rel="stylesheet" href="css/style.css" />
 	<script type="text/javascript" src="https://cdn.firebase.com/v0/firebase.js"></script>
 	<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
 </head>
