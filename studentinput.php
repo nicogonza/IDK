@@ -38,7 +38,8 @@
 <body>
 	<div class="student-input">
     <form method="post" action="studentinput.php">
-    <input type="text" name="name"><br>
+	<br>
+    <input type="text" name="name" placeholder="What Do You Not Understand?"><br>
 	<input type='submit' id='submit' name='press' value="Do Not Understand" onclick="sendComment(document.getElementById('question').value)">
     </form>
 	</div>
