@@ -1,3 +1,6 @@
+<?php
+
+?>
 <html>
 <head>
 	<title> IDK Signup </title>
@@ -9,7 +12,7 @@
 <!-- login header -->
   <h1 id="header">Sign up in seconds!</h1>
 <!-- start the signup process -->
-  <form id="form">
+  <form id="form" action="signup.php">
     <input type="text" placeholder="What's your username?" maxlength="16"><br />
     <input type="password" placeholder="Choose a password"><br />
 <!--	<input type="radio" name="type" value="teacher">Teacher<br />
