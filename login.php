@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="css/style.css" />
 </head>
 <div class="login">
-	<h1 id="header"> IDK, login page</h1>
+	<h1 id="header"> IDK, Professor login page</h1>
 
 	<table width="300" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC">
 	<tr>
@@ -11,16 +11,9 @@
 	<td>
 	<table width="100%" border="0" cellpadding="3" cellspacing="1" bgcolor="#FFFFFF">
 	<tr>
-	<td colspan="3"><strong>Professor Login </strong></td>
-	</tr>
-	<tr>
-	<td width="78">Username</td>
-	<td width="6">:</td>
 	<td width="294"><input name="myusername" type="text" id="myusername" placeholder="Username"></td>
 	</tr>
 	<tr>
-	<td>Password</td>
-	<td>:</td>
 	<td><input name="mypassword" type="password" id="mypassword" placeholder="Password"></td>
 	</tr>
 	<tr>
