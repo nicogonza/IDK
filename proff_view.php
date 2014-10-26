@@ -10,7 +10,7 @@
 <script language="javascript" type="text/javascript" src="js/jquery.js">
 </script>
 </head>
-<body>
+<body id="test">
 <div id="header">
   <h2>Classroom Analytics</h2>
 </div>
