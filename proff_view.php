@@ -17,7 +17,10 @@
 }
 </style>
 <script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1','packages':['corechart']}]}"></script>
-<script language="javascript" type="text/javascript" src="js/jquery.js"></script>
+<script language="javascript" type="text/javascript" src="js/jquery.js">
+</script>
+<?php 
+?>
 </head>
 <body>
 <div id="header">

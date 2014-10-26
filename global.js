@@ -8,27 +8,20 @@ $(function worker(){
           setTimeout(worker, 1000);
         }
     });
-	      google.setOnLoadCallback(drawChart);
+	drawChart();
       function drawChart() {
-
         var data = google.visualization.arrayToDataTable([
-          ['Task', 'Hours per Day'],
-          ['Work',     11],
-          ['Eat',      2],
-          ['Commute',  2],
-          ['Watch TV', 2],
-          ['Sleep',    7]
+          ['Selection', 'Per'],
+          ['IDK',     11],
+          ['K',      5]
         ]);
-
         var options = {
-          title: 'My Daily Activities'
+          title: 'IDK'
         };
-
         var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-
         chart.draw(data, options);
       }
-    var ajax_load = $.post('proffquery.php', 'comments', function(data){
+    var ajax_load = $.post('post.php',function(data){
 			$('div#data').html(data);
 		});
    html(ajax_load);
