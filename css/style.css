@@ -8,10 +8,18 @@ body {
 }
 
 /* login div */
-.login {
+.signup {
   background-color: #eee;
   width: 420px;
   height: 405px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.prof-login {
+  background-color: #eee;
+  width: 420px;
+  height: 370px;
   margin: 0 auto;
   padding: 0;
 }

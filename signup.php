@@ -5,7 +5,7 @@
 </head>
 <body>
 	<!-- login div -->
-	<div class="login">
+	<div class="signup">
 	<!-- login header -->
 		<h1 id="header">Sign up in seconds!</h1>
 		<!-- start the signup process -->
