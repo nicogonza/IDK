@@ -1,6 +1,6 @@
 <?php
 require ('mysqli_connect.php'); 
-if (isset($_POST['submit'])) {
+if (isset($_POST['signup'])) {
 // Check for a password and match against the confirmed password:
 	$username = $_POST['username'];
 	$classid = $_POST['classid'];
@@ -15,6 +15,7 @@ if (isset($_POST['submit'])) {
 		$errors[] = 'You forgot to enter your password.';
 	}
 	if (empty($errors)) { // If everything's OK.
+	echo "working";
 		$q = "SELECT * FROM professors group by id ASC";
 		$r = @mysqli_query ($dbc, $q); // Run the query.
 		if ($r) { // If it ran OK.
