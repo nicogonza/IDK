@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="css/style.css" />
 </head>
 <div class="login">
-	<h1 id="header"> IDK, Professor login page</h1>
+	<h1 id="header"> Professor Login</h1>
 
 	<form name="form1" method="post" action="check-login.php">
 	<input name="myusername" type="text" id="myusername" placeholder="Username">
