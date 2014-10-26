@@ -5,7 +5,7 @@
 // Send NOTHING to the Web browser prior to the setcookie() lines!
 
 // Check if the form has been submitted:
-if (isset($_POST['submit'])) {
+if (isset($_POST['login'])) {
 
 	// For processing the login:<p></p>
 	require ('login_functions.php');
@@ -14,12 +14,12 @@ if (isset($_POST['submit'])) {
 	require ('model/mysqli_connect.php');
 		
 	// Check the login:
-	list ($check, $data) = check_login($dbc, $_POST['Email'], $_POST['Pass']);
+	list ($check, $data) = check_login($dbc, $_POST['username'], $_POST['password']);
 	if ($check) { // OK!
 	
-                $_SESSION['Email']=$data['Email'];
+                $_SESSION['username']=$data['username'];
 				
-				$q = "select * from customer where Email = \"".$_SESSION['Email']."\";";	
+				$q = "select * from professors where username= \"".$_SESSION['username']."\";";	
 		
 				$r = @mysqli_query ($dbc, $q); 
 				
@@ -27,9 +27,9 @@ if (isset($_POST['submit'])) {
 					
 				$row = mysqli_fetch_array($r);
 				
-				echo $row['F_Name'];
+				echo $row['username'];
 				
-                $_SESSION['F_Name']=$row['F_Name'];
+                $_SESSION['u']=$row['F_Name'];
 				$_SESSION['Cust_ID']=$row['Cust_ID'];
                 echo $_SESSION['Email'].' '.$_SESSION['F_Name'];
 				
@@ -42,9 +42,6 @@ if (isset($_POST['submit'])) {
 				}
 		
 		// Redirect:
-		
-	
-		
 		redirect_user('login.php');
 			
 	} else { // Unsuccessful!

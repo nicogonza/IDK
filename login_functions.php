@@ -37,17 +37,17 @@ function check_login($dbc, $username = '', $password = '') {
 	$errors = array(); // Initialize error array.
 
 	// Validate the email address:
-	if (empty($email)) {
+	if (empty($username)) {
 		$errors[] = 'You forgot to enter your email address.';
 	} else {
-		$e = mysqli_real_escape_string($dbc, trim($email));
+		$e = mysqli_real_escape_string($dbc, trim($username));
 	}
 
 	// Validate the password:
-	if (empty($pass)) {
+	if (empty($password)) {
 		$errors[] = ' You forgot to enter your password.';
 	} else {
-		$p = mysqli_real_escape_string($dbc, trim($pass));
+		$p = mysqli_real_escape_string($dbc, trim($password));
 		
 		$p = SHA1($p);
 	}
