@@ -10,8 +10,10 @@ if (isset($_POST['login'])) {
 	// Check the login:
 	list ($check, $data) = check_login($dbc, $_POST['classid']);
 	if ($check) { // OK!
-				
-				$q = "select * from class where classid= $_POST['classid']";	
+	
+
+				//echo 'classid = '.$_POST['classid'];
+				$q = "select * from class where class_ID= \"".$_POST['classid']."\";";	
 		
 				$r = @mysqli_query ($dbc, $q); 
 				
