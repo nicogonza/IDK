@@ -2,7 +2,7 @@ $(function worker(){
     $.ajaxSetup ({
         cache: false,
         complete: function() {
-          setTimeout(worker, 1000);
+          setTimeout(worker, 10000);
         }
     });
 $.post('proffquery.php', { key: 'comments'}).done(function(data) {
@@ -13,8 +13,8 @@ drawChart();
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
           ['Selection', 'Per'],
-          ['IDK',     18],
-          ['K',      5]
+          ['IDK',     Math.random(300)],
+          ['K',      Math.random(300)]
         ]);
         var options = {
           title: 'IDK'
