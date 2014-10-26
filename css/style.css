@@ -32,6 +32,13 @@ body {
   padding: 0;
 }
 
+.student-login {
+  background-color: #eee;
+  width: 420px;
+  height: 250px;
+  margin: 0 auto;
+  padding: 0;
+}
 
 /* login header */
 h1 {

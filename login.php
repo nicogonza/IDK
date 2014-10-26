@@ -1,4 +1,4 @@
-	<HTML> 
+<HTML> 
 <head>
 <link rel="stylesheet" href="css/style.css" />
 </head>
