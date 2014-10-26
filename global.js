@@ -1,7 +1,7 @@
 // JavaScript Document
-$('input#name-submit').on('click', function() {
+function update() {
 	var name = $('input#name').val();
 	$.post('proffquery.php', {name: name}, function(data){
 			$('div#name-data').text(data);
 		});
-});
+};

@@ -1,5 +1,5 @@
 <?php
-function redirect_user ($page = 'studentinput.php') {
+function redirect_user ($page = 'proff_view.php') {
 	$url = 'http://' . $_SERVER['HTTP_HOST'] . dirname($_SERVER['PHP_SELF']);
 	$url = rtrim($url, '/\\');
 	$url .= '/' . $page;
