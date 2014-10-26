@@ -18,8 +18,6 @@
 		$question = $_POST["name"];
 		$timep= $timep+1;
 		$sid = $sid+1;
-		echo "SID after: ".$sid;
-		echo "timesressed: ".$timep;
 		$sql = "INSERT INTO `student`(`class_ID`,`comments`, `student_ID`,`times_pressed`) values(1000,\"$question\", $sid, $timep)";
 		echo "<br>";
 		echo $sql;
