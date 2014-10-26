@@ -32,7 +32,7 @@ echo'redirect user';
  * - a TRUE/FALSE variable indicating success
  * - an array of either errors or the database result
  */
-function check_login($dbc, $email = '', $pass = '') {
+function check_login($dbc, $username = '', $password = '') {
 
 	$errors = array(); // Initialize error array.
 
@@ -56,7 +56,7 @@ function check_login($dbc, $email = '', $pass = '') {
 	if (empty($errors)) { // If everything's OK.
 		
 		// Retrieve the user_id and first_name for that email/password combination:
-		$q = "SELECT Email FROM customer WHERE Email='$e' AND Pass='$p'";		
+		$q = "SELECT Email FROM professors WHERE username='$e' AND password='$p'";		
 		$r = @mysqli_query ($dbc, $q); // Run the query.
 		
 		// Check the result:
