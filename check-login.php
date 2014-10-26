@@ -1,6 +1,6 @@
 <?php
 
-require('mysqli_connect');
+require('mysqli_connect.php');
 
 // Connect to server and select databse.
 mysql_connect("$host", "$username", "$password")or die("cannot connect to DB"); 
