@@ -6,14 +6,14 @@ $(function worker(){
         }
     });
 $.post('proffquery.php', { key: 'comments'}).done(function(data) {
-	$('div#data').text(data);
-	$('div#data').append("<br>");
+	$('div#data2').text(data);
+	$('div#data2').append("<br>");
 });
 drawChart();
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
           ['Selection', 'Per'],
-          ['IDK',     11],
+          ['IDK',     18],
           ['K',      5]
         ]);
         var options = {

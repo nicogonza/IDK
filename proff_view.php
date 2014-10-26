@@ -16,11 +16,45 @@
 </div>
 <div id="piechart" style="width: 900px; height: 500px;"></div>
 <h3 id="title"></h3>
-<div id="data"></div>
+<div id="data">
+
 <?php
 include('proffquery.php'); 
+include('post.php'); 
 ?>
 
-<script src="global.js"></script>
+<script>
+$(function worker(){
+    $.ajaxSetup ({
+        cache: false,
+        complete: function() {
+          setTimeout(worker, 1000);
+        }
+    });
+$.post('proffquery.php', { key: 'comments'}).done(function(data) {
+	$('div#data').text(data);
+	$('div#data').append("<br>");
+});
+drawChart();
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Selection', 'Per'],
+          ['IDK',     18],
+          ['K',      5]
+        ]);
+        var options = {
+          title: 'IDK'
+        };
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+        chart.draw(data, options);
+      }
+});
+</script>
+<script language="javascript" type="text/javascript" src="global.js">
+</script>
+</div>
+
+<div id="data2"></div>
+
 </body>
 </html>

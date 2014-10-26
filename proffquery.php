@@ -6,4 +6,5 @@ $r = @mysqli_query ($dbc, $sql);
 $row = mysqli_fetch_array($r);
 	   $comments = $row['comments'];
 		echo $comments;
+		echo "Class ID: ".$row['class_ID'];
 ?>
