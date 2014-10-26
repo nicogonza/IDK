@@ -1,20 +1,14 @@
-<?php # Script 12.3 - login.php
-// This page processes the login form submission.
-// Upon successful login, the user is redirected.
-// Two included files are necessary.
-// Send NOTHING to the Web browser prior to the setcookie() lines!
-echo "working";
-// Check if the form has been submitted:
+<?php
 if (isset($_POST['login'])) {
 
 	// For processing the login:<p></p>
 	require ('login_functions.php');
 	
 	// Need the database connection:
-	require ('model/mysqli_connect.php');
+	require ('mysqli_connect.php');
 		
 	// Check the login:
-	list ($check, $data) = check_login($dbc, $_POST['username'], $_POST['password']);
+	list ($check, $data) = check_login($dbc, $_POST['myusername'], $_POST['mypassword']);
 	if ($check) { // OK!
 	
                 $_SESSION['username']=$data['username'];
@@ -26,12 +20,6 @@ if (isset($_POST['login'])) {
 				if($r) {
 					
 				$row = mysqli_fetch_array($r);
-				
-				echo $row['username'];
-				
-                $_SESSION['u']=$row['F_Name'];
-				$_SESSION['Cust_ID']=$row['Cust_ID'];
-                echo $_SESSION['Email'].' '.$_SESSION['F_Name'];
 				
 				} else {
 					

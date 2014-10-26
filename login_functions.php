@@ -5,9 +5,8 @@
  * The function takes one argument: the page to be redirected to.
  * The argument defaults to index.php.
  */
-function redirect_user ($page = 'index.php') {
+function redirect_user ($page = 'studentinput.php') {
 
-echo'redirect user';
 	// Start defining the URL...
 	// URL is http:// plus the host name plus the current directory:
 	$url = 'http://' . $_SERVER['HTTP_HOST'] . dirname($_SERVER['PHP_SELF']);
@@ -48,15 +47,13 @@ function check_login($dbc, $username = '', $password = '') {
 		$errors[] = ' You forgot to enter your password.';
 	} else {
 		$p = mysqli_real_escape_string($dbc, trim($password));
-		
-		$p = SHA1($p);
 	}
 
 
 	if (empty($errors)) { // If everything's OK.
 		
 		// Retrieve the user_id and first_name for that email/password combination:
-		$q = "SELECT Email FROM professors WHERE username='$e' AND password='$p'";		
+		$q = "SELECT username FROM professors WHERE username='$e' AND password='$p'";		
 		$r = @mysqli_query ($dbc, $q); // Run the query.
 		
 		// Check the result:
