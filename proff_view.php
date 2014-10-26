@@ -12,11 +12,11 @@
 </head>
 <body id="test">
 <div id="header">
-  <h2>Classroom Analytics</h2>
+  <h2 style="color:#FFFFFF">Classroom Analytics</h2>
 </div>
 <div id="piechart" style="width: 900px; height: 500px;"></div>
 <h3 id="title"></h3>
-<div id="data">
+<div id="data" style="color:#FFFFFF">
 
 <?php
 include('proffquery.php'); 
@@ -27,7 +27,7 @@ include('post.php');
 </script>
 </div>
 
-<div id="data2"></div>
+<div id="data2" style="color:#FFFFFF"></div>
 
 </body>
 </html>
