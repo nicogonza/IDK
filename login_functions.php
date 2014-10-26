@@ -37,7 +37,7 @@ function check_login($dbc, $username = '', $password = '') {
 
 	// Validate the email address:
 	if (empty($username)) {
-		$errors[] = 'You forgot to enter your email address.';
+		$errors[] = 'You forgot to enter your username.';
 	} else {
 		$e = mysqli_real_escape_string($dbc, trim($username));
 	}
