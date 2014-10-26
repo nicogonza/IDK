@@ -19,15 +19,13 @@
 		$timep= $timep+1;
 		$sid = $sid+1;
 		$sql = "INSERT INTO `student`(`class_ID`,`comments`, `student_ID`,`times_pressed`) values(1000,\"$question\", $sid, $timep)";
-		echo "<br>";
-		echo $sql;
 		$r = @mysqli_query ($dbc, $sql);
 		if ($r){
 			echo '<h1 id="header"> Thank you for your question <h1>';
 		}else {
 			echo '<h1 id="header">Error!</h1>';
 		}
-	} else {
+	}
 ?>
 <head>
 	<title> Student IDK </title>
@@ -64,5 +62,4 @@
 	}
 	</script>	
 </body>
-<?php } ?>
 
