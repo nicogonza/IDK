@@ -6,8 +6,6 @@ $r = @mysqli_query ($dbc, $sql);
 while($row = mysqli_fetch_array($r)){	
 	   $comments = $row['comments'];
         $timesp = $row['times_pressed'];
-    echo $comments;
-    echo $timesp;
 		}
 $sql = "SELECT * FROM class";
 $r = @mysqli_query ($dbc, $sql);
