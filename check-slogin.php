@@ -2,18 +2,16 @@
 if (isset($_POST['login'])) {
 
 	// For processing the login:<p></p>
-	require ('login_functions.php');
+	require ('slogin_functions.php');
 	
 	// Need the database connection:
 	require ('mysqli_connect.php');
 		
 	// Check the login:
-	list ($check, $data) = check_login($dbc, $_POST['myusername'], $_POST['mypassword']);
+	list ($check, $data) = check_login($dbc, $_POST['classid']);
 	if ($check) { // OK!
-	
-                $_SESSION['username']=$data['username'];
 				
-				$q = "select * from professors where username= \"".$_SESSION['username']."\";";	
+				$q = "select * from class where classid= $_POST['classid']";	
 		
 				$r = @mysqli_query ($dbc, $q); 
 				
