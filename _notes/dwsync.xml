@@ -9,7 +9,7 @@
 <file name="login.php" server="ftp.gonzodev.com" local="130587819279913880" remote="130587825000000000" Dst="2" />
 <file name="slogin.php" server="ftp.gonzodev.com" local="130587712140799022" remote="130587720000000000" Dst="2" />
 <file name="check-slogin.php" server="ftp.gonzodev.com" local="130587712140799022" remote="130587720000000000" Dst="2" />
-<file name="global.js" server="ftp.gonzodev.com" local="130588085341953960" remote="130588084800000000" Dst="2" />
+<file name="global.js" server="ftp.gonzodev.com" local="130588094666791742" remote="130588094400000000" Dst="2" />
 <file name="proff_view.php" server="ftp.gonzodev.com" local="130588083707698133" remote="130588083600000000" Dst="2" />
 <file name="slogin_functions.php" server="ftp.gonzodev.com" local="130587764348188287" remote="130587764400000000" Dst="2" />
 <file name="proffquery.php" server="ftp.gonzodev.com" local="130588084151479017" remote="130588083600000000" Dst="2" />
@@ -19,5 +19,5 @@
 <file name="bootstrap.min.js" server="ftp.gonzodev.com" local="130587836330788785" remote="130587836400000000" Dst="2" />
 <file name="pie.html" server="ftp.gonzodev.com" local="130587871929537355" remote="130587871800000000" Dst="2" />
 <file name="examples.css" server="ftp.gonzodev.com" local="130587867713049865" remote="130587867600000000" Dst="2" />
-<file name="post.php" server="ftp.gonzodev.com" local="130588062347447071" remote="130588062000000000" Dst="2" />
+<file name="post.php" server="ftp.gonzodev.com" local="130588088556904125" remote="130588088400000000" Dst="2" />
 </dwsync>

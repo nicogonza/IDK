@@ -7,10 +7,6 @@ $(function worker(){
     });
 	drawChart();
       function drawChart() {
-		  $.post('proffquery.php', { key: 'comments'}).done(function(data) {
-    $('div#data').append(data);
-	$('div#data').append("<br>");
-});
         var data = google.visualization.arrayToDataTable([
           ['Selection', 'Per'],
           ['IDK',     11],
@@ -23,7 +19,10 @@ $(function worker(){
         chart.draw(data, options);
       }
 $.post('proffquery.php', { key: 'comments'}).done(function(data) {
-    $('div#data').append(data);
+
+});
+$.post('post.php', { key: 'times_pressed'}).done(function(data) {
+    $('div#data').text(data);
 	$('div#data').append("<br>");
 });
 });

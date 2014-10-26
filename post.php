@@ -1,9 +1,9 @@
 <?php 
-require ('mysqli_connect.php');
-$sql = "SELECT * FROM class";
+	require ('mysqli_connect.php');
+$sql = "SELECT * FROM student order by student_ID DESC";
 $r = @mysqli_query ($dbc, $sql);
-while($row = mysqli_fetch_array($r)){
-    $classiD=$row['class_ID'];
-    $class_size=$row['class_Size'];
-    $student_ID=$row['student_ID'];}
+$row = mysqli_fetch_array($r);
+	   $timesp = $row['times_pressed'];
+		echo $timesp;
+?>
 ?>
