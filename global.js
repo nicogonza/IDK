@@ -9,6 +9,10 @@ $.post('proffquery.php', { key: 'comments'}).done(function(data) {
 	$('div#data2').text(data);
 	$('div#data2').append("<br>");
 });
+$.post('post.php', { key: 'times_pressed'}).done(function(data) {
+	$('div#data2').text(data);
+	$('div#data2').append("<br>");
+});
 drawChart();
       function drawChart() {
         var data = google.visualization.arrayToDataTable([

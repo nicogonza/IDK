@@ -17,10 +17,9 @@
 <div id="piechart" style="width: 900px; height: 500px;"></div>
 <h3 id="title"></h3>
 <div id="data" style="color:#FFFFFF">
-
+<h2>Comments:</h2>
 <?php
 include('proffquery.php'); 
-include('post.php'); 
 ?>
 
 <script language="javascript" type="text/javascript" src="global.js">
