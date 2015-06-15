@@ -22,13 +22,13 @@ if (isset($_POST['signup'])) {
 			$profid = $row['id'] + 1;
 		}
 		$q = "INSERT INTO professors(`id`,`password`,`username`) values ($profid, \"$pass\", \"$username\")";
-		echo $q;
 		$r = @mysqli_query ($dbc, $q); // Run the query.
 		$q = "INSERT INTO class (`class_ID`,`class_Size`) values ($classid, $classsize)";  
 		$r = @mysqli_query ($dbc, $q); // Run the query.
 		mysqli_close($dbc); // Close the database connection.
+        header("Location: index.html");
 		exit();
-	} else { // Report the errors.
+    } else { // Report the errors.
 		echo '<h1>Error!</h1>
 		<p class="error">The following error(s) occurred:<br>';
 		foreach ($errors as $msg) { // Print each error.
@@ -38,6 +38,7 @@ if (isset($_POST['signup'])) {
 	} // End of if (empty($errors)) IF.
 }
 ?>
+
 <HTML>
 <head>
 <link rel="stylesheet" href="css/style.css" />

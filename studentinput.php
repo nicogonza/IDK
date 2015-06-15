@@ -38,28 +38,8 @@
     <form method="post" action="studentinput.php">
 	<br>
     <input type="text" name="name" placeholder="What Do You Not Understand?"><br>
-	<input type='submit' id='submit' name='press' value="Do Not Understand" onclick="sendComment(document.getElementById('question').value)">
+	<input type='submit' id='submit' name='press' value="Do Not Understand">
     </form>
 	</div>
-    
-    <p id="demo"></p>
-	
-	<script>
-	function sendComment(text) { 
-	document.getElementById("demo").innerHTML = text;
-		if (window.XMLHttpRequest) {
-			xmlhttp = new XMLHttpRequest();
-		} else {
-			xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-		}
-		xmlhttp.onstatechange=function() {
-			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-				document.getElementById("student-input").innerHTML=xmlhttp.responseText;
-			}
-		}
-		xmlhttp.open("GET","studentinput.php?response="+text,true);
-		xmlhttp.send();
-	}
-	</script>	
 </body>
 

@@ -30,6 +30,5 @@
       </form>
 </div> <!-- prof-login-->
     </div> <!-- /container -->
-</script>
   </body>
 </html>

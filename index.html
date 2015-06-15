@@ -1,23 +1,38 @@
 <html>
 <head>
-	<title> Log In </title>
-	<link rel="stylesheet" href="css/style.css" />
-	<script type="text/javascript" src="https://cdn.firebase.com/v0/firebase.js"></script>
-	<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
+    <title> Log In </title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script type="text/javascript" src="https://cdn.firebase.com/v0/firebase.js"></script>
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </head>
 <body>
 <div class="container">
-  <div class="prof-login">
-    <form name="form1" method="post" action="check-login.php">
-      <h2 class="form-signin-heading">Log In</h2>
-      <input name="student" value="Student Log In" type="submit">
-      </input>
-      <br>
-      <input name="prof" value="Professor Log In" type="submit">
-      </input>
-    </form>
-  </div>
-  <!-- prof-login--> 
-</div>
-<!-- /container -->
+    <div class="prof-login">
+        <form name="form1" method="post" action="check-login.php">
+            <h2 class="form-signin-heading">Log In</h2>
+            <br>
+            <input name="prof" value="Professor Log In" type="submit">
+            </input>
+        </form>
+    </div>
+    <!-- student-login-->
+    <div class="student-login">
+        <form name="form1" method="post" action="check-slogin.php">
+            <input name="student" value="Student Log In" type="submit">
+            </input>
+        </form>
+    </div>
+
+    <!-- professro sign-up -->
+    <div class="student-login">
+        <form name="form1" method="post" action="signup.php">
+            <input name="student" value="Sign-Up (Professors Only)" type="submit">
+            </input>
+        </form>
+
+    </div>
+    <!-- /container -->
 </body>
